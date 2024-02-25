@@ -35,7 +35,7 @@ class _ResendCodeWidgetState extends State<ResendCodeWidget> {
   }
 
   void _startTimer() {
-    _timer = Timer.periodic(Duration(seconds: 1), (timer) {
+    _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (_seconds > 0) {
         setState(() {
           _seconds--;
@@ -57,7 +57,7 @@ class _ResendCodeWidgetState extends State<ResendCodeWidget> {
     String displayTime =
         'Resend Code in 0:${_seconds.toString().padLeft(2, '0')}';
     return Padding(
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Text(displayTime),
     );
   }
@@ -128,7 +128,7 @@ class MyApp extends StatelessWidget {
                       color: Colors.black, fontWeight: FontWeight.w600),
                 ),
               ),
-              ResendCodeWidget(),
+              const ResendCodeWidget(),
             ],
           ),
         ),
