@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:otp_screen/pages/hostel.dart';
 import 'package:otp_screen/pages/rooms.dart';
+import 'package:otp_screen/profile.dart';
 
 class HomePage extends StatelessWidget {
   final String accessToken;
@@ -104,7 +105,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const Hostelpage(
+                    builder: (context) => const ProfilePage(
                         // accessToken: accessToken,
                         ),
                   ),
@@ -120,7 +121,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const Hostelpage(
+                    builder: (context) => HostelPage(
                         // accessToken: accessToken,
                         ),
                   ),
