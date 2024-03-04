@@ -76,25 +76,25 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
-        // actions: [
-        //   Padding(
-        //     padding: const EdgeInsets.fromLTRB(0, 0, 30, 0),
-        //     child: IconButton(
-        //       icon: const Icon(Icons.account_circle,
-        //           color: Color(0xFFF59B15), size: 35),
-        //       onPressed: () {
-        //         Navigator.push(
-        //           context,
-        //           MaterialPageRoute(
-        //             builder: (context) => const profilePage(
-        //               // accessToken: accessToken,
-        //             ),
-        //           ),
-        //         );
-        //       },
-        //     ),
-        //   ),
-        // ],
+        actions: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+            child: IconButton(
+              icon: const Icon(Icons.account_circle,
+                  color: Color(0xFFF59B15), size: 35),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ProfilePage(
+                        // accessToken: accessToken,
+                        ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
       ),
       body: SafeArea(
         child: ListView(
