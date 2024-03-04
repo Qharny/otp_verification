@@ -10,6 +10,15 @@ class RegisterHostel extends StatefulWidget {
 class _RegisterHostelState extends State<RegisterHostel> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+      ),
+    );
   }
 }

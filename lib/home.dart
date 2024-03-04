@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:otp_screen/pages/Register.dart';
 import 'package:otp_screen/pages/hostel.dart';
 import 'package:otp_screen/pages/rooms.dart';
 import 'package:otp_screen/profile.dart';
@@ -87,7 +88,6 @@ class HomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) => const ProfilePage(
-                        // accessToken: accessToken,
                         ),
                   ),
                 );
@@ -105,7 +105,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const ProfilePage(
+                    builder: (context) => const RegisterHostel(
                         // accessToken: accessToken,
                         ),
                   ),
